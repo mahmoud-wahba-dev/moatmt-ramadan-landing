@@ -296,3 +296,46 @@ body {
   z-index: 1;
   pointer-events: none;
 }
+/* ========================
+   Hub Section Styles
+======================== */
+
+.hub-card-tl,
+.hub-card-tr,
+.hub-card-bl,
+.hub-card-br {
+  transition: all 0.3s ease;
+}
+
+.hub-card-tl:hover,
+.hub-card-tr:hover,
+.hub-card-bl:hover,
+.hub-card-br:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(10, 56, 28, 0.15);
+}
+
+/* Responsive Hub Section */
+@media (max-width: 768px) {
+  .max-w-4xl {
+    height: auto !important;
+  }
+
+  .hub-card-tl,
+  .hub-card-tr,
+  .hub-card-bl,
+  .hub-card-br {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    left: auto !important;
+    bottom: auto !important;
+    width: 100% !important;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  svg[style*="pointer-events"] {
+    display: none;
+  }
+}

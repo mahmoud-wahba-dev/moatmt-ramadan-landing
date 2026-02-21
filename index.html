@@ -78,7 +78,7 @@
 
             </a>
             <div class="md:hidden">
-              <button type="button" class="collapse-toggle btn btn-outline btn-secondary btn-sm btn-square"
+              <button type="button" class="collapse-toggle btn btn-outline btn-primary btn-sm btn-square"
                 data-collapse="#logo-navbar-collapse" aria-controls="logo-navbar-collapse"
                 aria-label="Toggle navigation">
                 <span class="icon-[tabler--menu-2] collapse-open:hidden size-4"></span>
@@ -153,7 +153,7 @@
 
               </a></li>
           </ul>
-          <button class="btn btn-gradient  h-14 rounded-18px bg-black">
+          <button class="btn btn-gradient  h-14 rounded-18px bg-black max-sm:btn-block">
 
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -178,17 +178,18 @@
       </div>
     </nav>
 
-    <header class="bg-[#D2FFE3] py-20">
+    <header class="bg-[#D2FFE3] py-20 max-sm:py-2 max-sm:pb-18">
       <div class="container">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-44 ">
-          <div class="flex items-center py-11">
+        <div class="grid grid-cols-1 lg:grid-cols-12  xl:gap-28 max-sm:gap-12">
+        <div class="lg:col-span-6 flex items-center">
+            <div class="flex items-center py-11 max-lg:py-8">
             <div>
               <p class="font-light text-22px text-black mb-3.5">
                 عرض خاص لشهر رمضان 🌙
               </p>
               <h1 class="font-bold text-72px mb-12  ">
                 رمضانك أخف…
-                <div class="flex items-center gap-4">
+                <div class="flex items-center gap-4  max-sm:flex-wrap">
                   <span>وشغلك</span>
                   <span class="">
                     <svg width="228" height="129" viewBox="0 0 228 129" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -221,7 +222,7 @@
                 المبيعات.
               </p>
 
-              <div class="flex items-center gap-1.5 mb-12">
+              <div class="flex items-center gap-1.5 mb-12 max-sm:flex-wrap max-sm:justify-center">
                 <a href="" class="btn btn-primary rounded-18px h-14 w-[50%]">
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -250,7 +251,7 @@
               </div>
               <div>
                 <p class="mb-8 font-light text-22px">متوافق مع منصات التجارة المفضلة لديك :</p>
-                <div class="flex items-center gap-9 ">
+                <div class="flex items-center gap-9 max-sm:flex-wrap max-sm:justify-center">
                   <span>
                     <svg width="75" height="32" viewBox="0 0 75 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_20_796)">
@@ -351,16 +352,17 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <div>
-            <img class="h-full" src="/public/images/hero.webp" alt="">
+          <div class="lg:col-span-6">
+            <img class="" src="/public/images/hero.webp" alt="">
           </div>
         </div>
       </div>
     </header>
   </section>
 
-  <section class="md:py-32 py-8 relative overflow-hidden">
+  <section class="md:py-32 py-8 relative overflow-hidden max-sm:pt-24">
     <div class="container">
       <h3 class="font-bold text-36px text-center text-primary mb-6">مزايـــــا سريعة تســـــاعدك في رمضــــــــــان 🌙
       </h3>
@@ -479,57 +481,39 @@
       </div>
       <div class="flex items-center gap-4 absolute -top-3">
         <img class="h-[74px]" src="/public/images/star-1.png" alt="">
-        <img class="h-[105px]" src="/public/images/star-2.png" alt="">
-        <img class="h-[80px]" src="/public/images/star-3.png" alt="">
+        <img class="h-[105px] max-sm:hidden" src="/public/images/star-2.png" alt="">
+        <img class="h-[80px] max-sm:hidden" src="/public/images/star-3.png" alt="">
       </div>
 
       <div class="flex items-center gap-4 absolute end-[2%] -top-3">
         <img class="h-[74px]" src="/public/images/star-1.png" alt="">
-        <img class="h-[105px]" src="/public/images/star-2.png" alt="">
-        <img class="h-[80px]" src="/public/images/star-3.png" alt="">
+        <img class="h-[105px] max-sm:hidden" src="/public/images/star-2.png" alt="">
+        <img class="h-[80px] max-sm:hidden"  src="/public/images/star-3.png" alt="">
       </div>
     </div>
   </section>
 
-  <section class="md:py-32 py-8 ">
+  <!-- <section class="md:py-32 py-8 ">
     <div class="container">
       <h3>ليه مؤتمت في رمضان؟</h3>
       <p>رمضان موسم ضغط… ومؤتمت يشيل عنك التعب 🔥</p>
 
 
-  </section>
+  </section> -->
+
+
 
   <section class="relative py-24 bg-[#F7F8F7] overflow-hidden" dir="rtl">
 
-  <!-- Background Radial Circles -->
-  <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-    <div class="w-[700px] h-[700px] rounded-full border border-green-200 opacity-30"></div>
-    <div class="absolute w-[520px] h-[520px] rounded-full border border-green-200 opacity-20"></div>
-    <div class="absolute w-[350px] h-[350px] rounded-full border border-green-200 opacity-10"></div>
-  </div>
 
-  <!-- Mosque Background (Replace with your SVG) -->
-  <img src="/mosque.svg"
-       class="absolute bottom-0 left-1/2 -translate-x-1/2 opacity-10 w-[800px] pointer-events-none hidden md:block" />
 
-  <!-- Curved Connector Lines (Desktop Only) -->
-  <svg class="absolute inset-0 w-full h-full pointer-events-none hidden lg:block"
-       viewBox="0 0 1200 600" fill="none">
-    <path d="M300 200 C400 250, 500 250, 600 300"
-          stroke="#14532D" stroke-width="2" opacity="0.3"/>
-    <path d="M300 400 C400 350, 500 350, 600 300"
-          stroke="#14532D" stroke-width="2" opacity="0.3"/>
-    <path d="M900 200 C800 250, 700 250, 600 300"
-          stroke="#14532D" stroke-width="2" opacity="0.3"/>
-    <path d="M900 400 C800 350, 700 350, 600 300"
-          stroke="#14532D" stroke-width="2" opacity="0.3"/>
-  </svg>
+
 
   <!-- Content -->
   <div class="relative z-10 max-w-6xl mx-auto px-6">
 
     <!-- Title -->
-    <div class="text-center mb-20">
+    <div class="text-center">
       <h2 class="text-3xl font-bold text-green-900 mb-4">
         ليه مؤتمت في رمضان؟
       </h2>
@@ -539,77 +523,8 @@
     </div>
 
     <!-- Grid Layout -->
-    <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-16">
-
-      <!-- Left Features -->
-      <div class="space-y-16 text-right">
-
-        <!-- Feature 1 -->
-        <div class="flex gap-4 items-start">
-          <div class="bg-green-100 w-12 h-12 rounded-xl flex items-center justify-center">
-            <span class="text-green-700 font-bold">24</span>
-          </div>
-          <div>
-            <h4 class="font-bold text-green-900 mb-2">رد فوري 24/7</h4>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              يحول المحادثة مباشرة لك أو لفريقك عند الحاجة بدون تأخير.
-            </p>
-          </div>
-        </div>
-
-        <!-- Feature 2 -->
-        <div class="flex gap-4 items-start">
-          <div class="bg-green-100 w-12 h-12 rounded-xl flex items-center justify-center">
-            ⭐
-          </div>
-          <div>
-            <h4 class="font-bold text-green-900 mb-2">تحويل مباشر للموظف</h4>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              يحول المحادثة لك أو لموظفك فورًا عند الحاجة.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Center Card -->
-      <div class="flex justify-center order-first lg:order-none">
-        <div class="bg-green-900 text-white w-36 h-36 rounded-3xl flex items-center justify-center shadow-2xl text-xl font-bold">
-          مؤتمت
-        </div>
-      </div>
-
-      <!-- Right Features -->
-      <div class="space-y-16 text-right">
-
-        <!-- Feature 3 -->
-        <div class="flex gap-4 items-start">
-          <div class="bg-green-100 w-12 h-12 rounded-xl flex items-center justify-center">
-            ⚡
-          </div>
-          <div>
-            <h4 class="font-bold text-green-900 mb-2">رد على الأسئلة المتكررة</h4>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              يرد على الأسئلة الشائعة مثل الأسعار والشحن والتوفر بشكل فوري.
-            </p>
-          </div>
-        </div>
-
-        <!-- Feature 4 -->
-        <div class="flex gap-4 items-start">
-          <div class="bg-green-100 w-12 h-12 rounded-xl flex items-center justify-center">
-            🛒
-          </div>
-          <div>
-            <h4 class="font-bold text-green-900 mb-2">استعادة السلات المتروكة</h4>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              يرسل تذكيرات ذكية للعملاء لاسترجاع السلات وزيادة المبيعات.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
+    <div>
+      <img src="/public/images/why-moatmt-2.webp" alt=" Feature 1" class="max-sm:scale-150">
     </div>
   </div>
 </section>
@@ -620,7 +535,7 @@
         وش تقدر تسوي بمؤتمت؟
       </h3>
       <p class="font-light text-22px text-center mb-14"> حلول متكاملة تغطي كل احتياجات متجرك.</p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 mb-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 mb-12 max-sm:gap-12">
         <div class="bg-white rounded-55px p-11">
           <div class="size-10 bg-primary center_flex rounded-full font-semibold text-14px text-white mb-5">
             01
@@ -712,7 +627,7 @@
       <div class="grid grid-cols-1  lg:grid-cols-[1fr_auto_1fr_auto_1fr] gap-10 mb-12">
 
         <div>
-          <div class="flex gap-2.5 font-medium text-22px text-d3 mb-6">
+          <div class="flex gap-2.5 font-medium text-22px text-d3 mb-6 max-sm:justify-center">
             الخطوة 1
             <span class="pt-4 ">
               <svg width="49" height="40" viewBox="0 0 49 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -725,7 +640,7 @@
           </div>
 
           <div class="h-[379px] mb-9">
-            <img class="max-h-full " src="/public/images/step-1.webp" alt="step 1">
+            <img class="max-h-full max-sm:m-auto" src="/public/images/step-1.webp" alt="step 1">
           </div>
           <p class="font-bold text-22px text-black mb-4 text-center">اشترك في باقة سويتش</p>
           <p class="font-normal text-base text-black text-center">
@@ -733,7 +648,7 @@
           </p>
         </div>
 
-        <div class="flex items-center">
+        <div class="flex items-center max-sm:rotate-[270deg] max-sm:ps-[5rem] max-sm:justify-center">
           <svg width="108" height="33" viewBox="0 0 108 33" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M0.0647793 28.3831C-0.130184 28.8999 0.130657 29.4768 0.647385 29.6718L9.06795 32.8489C9.58468 33.0439 10.1616 32.783 10.3566 32.2663C10.5515 31.7496 10.2907 31.1726 9.77398 30.9777L2.28903 28.1536L5.11313 20.6686C5.3081 20.1519 5.04725 19.5749 4.53053 19.38C4.0138 19.185 3.43686 19.4459 3.2419 19.9626L0.0647793 28.3831ZM106.075 15.8183C106.534 16.1253 107.155 16.0021 107.462 15.543C107.769 15.0839 107.646 14.4629 107.187 14.1558L106.631 14.9871L106.075 15.8183ZM1.0004 28.7362L1.41236 29.6474C3.09144 28.8882 5.16081 27.5218 7.54205 25.8481C9.9675 24.1432 12.6968 22.1335 15.8556 19.9449C22.1293 15.5982 29.8295 10.7387 38.7824 7.17274C56.6335 0.0626905 79.5257 -1.93765 106.075 15.8183L106.631 14.9871L107.187 14.1558C80.0131 -4.01775 56.4139 -2.00264 38.0424 5.3147C28.8841 8.96244 21.0402 13.9196 14.7166 18.3009C11.5769 20.4763 8.74424 22.5584 6.39196 24.2118C3.99547 25.8963 2.07128 27.1545 0.588433 27.825L1.0004 28.7362Z"
@@ -758,7 +673,7 @@
             </span>
           </div>
           <div class="h-[379px] mb-9">
-            <img class="max-h-full " src="/public/images/step-2.webp" alt="step 2">
+            <img class="max-h-full max-sm:m-auto" src="/public/images/step-2.webp" alt="step 2">
           </div>
 
 
@@ -768,9 +683,9 @@
             بالباركود في نظام مؤتمت
           </p>
 
-          <div class="flex justify-center items-baseline  gap-2.5 font-medium text-22px text-d3 mb-6">
+          <div class="flex justify-center items-baseline  gap-2.5 font-medium text-22px text-d3 mb-6 ">
             الخطوة 2
-            <span class=" ">
+            <span class="">
               <svg width="49" height="40" viewBox="0 0 49 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M6.65666 0.292892C7.04719 -0.0976295 7.68035 -0.0976295 8.07088 0.292892L14.4348 6.65685C14.8254 7.04738 14.8254 7.68054 14.4348 8.07107C14.0443 8.46159 13.4111 8.46159 13.0206 8.07107L7.36377 2.41422L1.70692 8.07107C1.31639 8.46159 0.683226 8.46159 0.292702 8.07107C-0.0978227 7.68054 -0.0978227 7.04738 0.292702 6.65685L6.65666 0.292892ZM48.3638 39V40H30.3638V39V38H48.3638V39ZM7.36377 16H6.36377V1H7.36377H8.36377V16H7.36377ZM30.3638 39V40C17.1089 40 6.36377 29.2548 6.36377 16H7.36377H8.36377C8.36377 28.1503 18.2135 38 30.3638 38V39Z"
@@ -782,7 +697,7 @@
           </div>
         </div>
 
-        <div class="flex items-center">
+        <div class="flex items-center max-sm:rotate-[270deg]  max-sm:justify-center">
           <svg width="108" height="33" viewBox="0 0 108 33" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M0.0647793 4.53043C-0.130184 4.0137 0.130657 3.43676 0.647385 3.2418L9.06795 0.0646809C9.58468 -0.130283 10.1616 0.13056 10.3566 0.647289C10.5515 1.16402 10.2907 1.74095 9.77398 1.93592L2.28903 4.76002L5.11313 12.245C5.3081 12.7617 5.04725 13.3386 4.53053 13.5336C4.0138 13.7286 3.43686 13.4677 3.2419 12.951L0.0647793 4.53043ZM106.075 17.0953C106.534 16.7883 107.155 16.9115 107.462 17.3706C107.769 17.8297 107.646 18.4507 107.187 18.7577L106.631 17.9265L106.075 17.0953ZM5.09799 5.39326C5.55921 5.69706 5.68682 6.31723 5.38302 6.77845C5.07922 7.23967 4.45905 7.36729 3.99783 7.06349L4.54791 6.22837L5.09799 5.39326ZM10.729 11.7979C10.2798 11.4766 10.1762 10.852 10.4975 10.4028C10.8188 9.95362 11.4435 9.84999 11.8926 10.1713L11.3108 10.9846L10.729 11.7979ZM18.6489 14.8696C19.1084 15.1761 19.2323 15.797 18.9258 16.2564C18.6193 16.7158 17.9984 16.8398 17.5389 16.5333L18.0939 15.7014L18.6489 14.8696ZM24.579 20.9528C24.1023 20.6738 23.942 20.0613 24.221 19.5846C24.4999 19.108 25.1125 18.9477 25.5891 19.2266L25.0841 20.0897L24.579 20.9528ZM32.799 23.0937C33.2957 23.3351 33.5027 23.9334 33.2613 24.4302C33.0199 24.9269 32.4215 25.1339 31.9248 24.8925L32.3619 23.9931L32.799 23.0937ZM39.586 28.1963C39.069 28.002 38.8074 27.4255 39.0016 26.9085C39.1959 26.3915 39.7725 26.1298 40.2895 26.3241L39.9377 27.2602L39.586 28.1963ZM48.0548 28.7847C48.5896 28.9224 48.9116 29.4676 48.7738 30.0024C48.6361 30.5373 48.0909 30.8592 47.5561 30.7215L47.8054 29.7531L48.0548 28.7847ZM55.7721 32.3288C55.2247 32.2557 54.8401 31.7527 54.9132 31.2052C54.9863 30.6578 55.4893 30.2733 56.0368 30.3464L55.9044 31.3376L55.7721 32.3288ZM64.1407 30.9126C64.693 30.9159 65.138 31.3663 65.1347 31.9186C65.1314 32.4709 64.681 32.9159 64.1287 32.9125L64.1347 31.9126L64.1407 30.9126ZM72.489 32.4258C71.9408 32.4931 71.4419 32.1032 71.3747 31.555C71.3075 31.0068 71.6974 30.5079 72.2456 30.4407L72.3673 31.4333L72.489 32.4258ZM80.2286 28.9531C80.7644 28.819 81.3074 29.1447 81.4414 29.6804C81.5755 30.2162 81.2499 30.7592 80.7141 30.8933L80.4713 29.9232L80.2286 28.9531ZM88.7005 28.3968C88.1834 28.5908 87.6069 28.3288 87.4129 27.8117C87.2189 27.2946 87.4809 26.7182 87.998 26.5242L88.3492 27.4605L88.7005 28.3968ZM95.4747 23.2677C95.9695 23.0223 96.5695 23.2244 96.815 23.7192C97.0604 24.2139 96.8583 24.8139 96.3635 25.0594L95.9191 24.1635L95.4747 23.2677ZM103.649 21.0236C103.178 21.3119 102.562 21.1637 102.274 20.6927C101.985 20.2216 102.133 19.606 102.605 19.3177L103.127 20.1706L103.649 21.0236ZM1.0004 4.17742L1.41236 3.26622C2.49851 3.75728 3.73515 4.49557 5.09799 5.39326L4.54791 6.22837L3.99783 7.06349C2.66213 6.18368 1.52959 5.51412 0.588433 5.08862L1.0004 4.17742ZM11.3108 10.9846L11.8926 10.1713C13.9514 11.6442 16.205 13.239 18.6489 14.8696L18.0939 15.7014L17.5389 16.5333C15.0675 14.8844 12.7929 13.2745 10.729 11.7979L11.3108 10.9846ZM25.0841 20.0897L25.5891 19.2266C27.872 20.5625 30.2769 21.868 32.799 23.0937L32.3619 23.9931L31.9248 24.8925C29.3503 23.6414 26.8999 22.311 24.579 20.9528L25.0841 20.0897ZM39.9377 27.2602L40.2895 26.3241C42.7865 27.2623 45.3762 28.0949 48.0548 28.7847L47.8054 29.7531L47.5561 30.7215C44.8025 30.0125 42.1445 29.1576 39.586 28.1963L39.9377 27.2602ZM55.9044 31.3376L56.0368 30.3464C58.6657 30.6973 61.3679 30.8959 64.1407 30.9126L64.1347 31.9126L64.1287 32.9125C61.268 32.8953 58.4813 32.6905 55.7721 32.3288L55.9044 31.3376ZM72.3673 31.4333L72.2456 30.4407C74.8512 30.1212 77.5129 29.6326 80.2286 28.9531L80.4713 29.9232L80.7141 30.8933C77.9186 31.5927 75.1761 32.0964 72.489 32.4258L72.3673 31.4333ZM88.3492 27.4605L87.998 26.5242C90.4503 25.6042 92.943 24.5236 95.4747 23.2677L95.9191 24.1635L96.3635 25.0594C93.7727 26.3446 91.2178 27.4524 88.7005 28.3968L88.3492 27.4605ZM103.127 20.1706L102.605 19.3177C103.754 18.6142 104.911 17.8738 106.075 17.0953L106.631 17.9265L107.187 18.7577C106.001 19.5509 104.821 20.3058 103.649 21.0236L103.127 20.1706Z"
@@ -800,7 +715,7 @@
 
 
 
-        <div>
+        <div class="max-sm:pt-8">
           <div class="flex justify-end gap-2.5  pe-14 font-medium text-22px text-d3 mb-6">
 
             <span class="pt-4 ">
@@ -816,7 +731,7 @@
           </div>
 
           <div class="h-[379px] mb-9">
-            <img class="max-h-full " src="/public/images/step-3.webp" alt="step 3">
+            <img class="max-h-full max-sm:m-auto" src="/public/images/step-3.webp" alt="step 3">
           </div>
           <p class="font-bold text-22px text-black mb-4 text-center">فعّل الرسائل</p>
           <p class="font-normal text-base text-black text-center">
@@ -842,7 +757,7 @@
         </p>
       </div>
     </div>
-    <div class="absolute top-[20%] start-[20%]">
+    <div class="absolute top-[20%] start-[20%] max-sm:hidden">
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M16 4C14.4087 5.5913 13.5147 7.74956 13.5147 10C13.5147 12.2504 14.4087 14.4087 16 16C17.5913 17.5913 19.7496 18.4853 22 18.4853C24.2504 18.4853 26.4087 17.5913 28 16C28 18.3734 27.2962 20.6935 25.9776 22.6668C24.6591 24.6402 22.7849 26.1783 20.5922 27.0866C18.3995 27.9948 15.9867 28.2324 13.6589 27.7694C11.3312 27.3064 9.19295 26.1635 7.51472 24.4853C5.83649 22.8071 4.6936 20.6689 4.23058 18.3411C3.76756 16.0133 4.0052 13.6005 4.91345 11.4078C5.8217 9.21509 7.35977 7.34094 9.33316 6.02236C11.3066 4.70379 13.6266 4 16 4Z"
@@ -897,6 +812,7 @@
     <div class="h-[292px] absolute end-[8%] top-0">
       <img src="/public/images/offer-star-short.webp" alt=" offer star" class="h-full ">
   </section>
+
 
   <section class="md:py-32 py-8">
     <div class="container md:!px-[15%]">
@@ -1059,7 +975,7 @@
 
 
     </div>
-    <div class="h-[267px] absolute start-[8%] bottom-0">
+    <div class="h-[267px] absolute start-[8%] bottom-0 max-sm:h-[40%]   max-sm:start-[25%] ">
       <img src="/public/images/prefooter-mosque.webp" alt=" prefooter mosque" class="w-full h-full ">
     </div>
 
@@ -1067,11 +983,11 @@
       <img src="/public/images/prefooter-star-1.webp" alt=" prefooter mosque" class="w-full h-full ">
     </div>
 
-    <div class="h-[67px] absolute start-[18%] top-0">
+    <div class="h-[67px] absolute start-[18%] top-0 max-sm:end-[18%] max-sm:start-auto">
       <img src="/public/images/prefooter-star-2.webp" alt=" prefooter mosque" class="w-full h-full ">
     </div>
 
-    <div class="h-[67px] absolute end-[10%] top-[20%]">
+    <div class="h-[67px] absolute end-[10%] top-[20%] max-sm:hidden ">
       <img src="/public/images/prefooter-helal.webp" alt=" prefooter mosque" class="w-full h-full ">
     </div>
   </section>
