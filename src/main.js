@@ -48,15 +48,18 @@ window.selectStore = function(store) {
   
   // Reset both buttons to default state
   [sallaBtn, zidBtn].forEach(btn => {
-    btn.classList.remove('bg-[#1C0531]', 'text-white', 'border-[#1C0531]');
+    btn.classList.remove('bg-[#004956]', 'bg-[#1C0531]', 'text-white', 'border-[#004956]', 'border-[#1C0531]');
     btn.classList.add('bg-white', 'border-[#e5e5e5]', 'text-[#C3C9CA]');
-    btn.classList.remove('text-white');
   });
   
-  // Highlight selected store with dark purple background
-  let selectedBtn = store === 'salla' ? sallaBtn : zidBtn;
-  selectedBtn.classList.remove('bg-white', 'border-[#e5e5e5]', 'text-[#C3C9CA]');
-  selectedBtn.classList.add('bg-[#1C0531]', 'text-white', 'border-[#1C0531]');
+  // Highlight selected store with specific background color
+  if (store === 'salla') {
+    sallaBtn.classList.remove('bg-white', 'border-[#e5e5e5]', 'text-[#C3C9CA]');
+    sallaBtn.classList.add('bg-[#004956]', 'text-white', 'border-[#004956]');
+  } else if (store === 'zid') {
+    zidBtn.classList.remove('bg-white', 'border-[#e5e5e5]', 'text-[#C3C9CA]');
+    zidBtn.classList.add('bg-[#1C0531]', 'text-white', 'border-[#1C0531]');
+  }
   
   // Enable the use code button
   useCodeBtn.disabled = false;
